@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color(red: 1.0, green: 0.75, blue: 0.8) // Light pink
+                .ignoresSafeArea()
+            VStack {
+                Text("Disney Princess Edition Memory Card Game")
+                    .font(.title).bold().multilineTextAlignment(.center)
+                    .padding()
+                Spacer()
+            }
         }
-        .padding()
     }
 }
 
